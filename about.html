@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="icon" href="images/beachhotel.png">
 
     <title>Guia Hoteles</title>
 
   </head>
-  <body>
+  <body class="container-full">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-         <a class="navbar-brand" href="#">Hoteles</a>
+         <a class="navbar-brand" style="color: #05aab0;" href="#"><img src="images/iconmonstr-airport-15-64.png" width="45"> Beach Hoteles</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
          </button>
@@ -24,14 +25,19 @@
                  <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
                  <li class="nav-item active"><a class="nav-link" href="./about.html">Nosotros</a></li>
                  <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
-                 <li class="nav-item"><a class="nav-link" href="#">Terminos y condiciones</a></li>
+                 <li class="nav-item"><a class="nav-link" href="./terms.html">Terminos y condiciones</a></li>
                  <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
              </ul>
          </div>
       </nav>
-    <div class="jumbotron">
-        <h1>Hoteles</h1>
+      <div class="row jumbotron">
+        <div class="col-md-3">
+        <img src="images/beachhotel.png" width="230">
+        </div>
+        <div class="col-md-8 mt-5">
+        <h1 style="color:#545454">Encontra tu hotel ideal para tus proximas vacasiones</h1> 
     </div>
+      </div>
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -39,38 +45,45 @@
                 <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
             </ol>
         </nav>
-       <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-           Aenean elementum quam a nulla finibus interdum eget at elit. 
-           Ut pellentesque ante vel mi vulputate, a eleifend lorem porta. 
-           Aenean mollis turpis sit amet lorem fringilla pharetra. Morbi in lobortis mi. 
-           Aenean id metus imperdiet, dapibus mauris sit amet, euismod diam. 
-           Morbi eget sollicitudin sem, at viverra libero. 
-           Suspendisse vulputate molestie ligula tempus consequat. 
-           Vivamus accumsan mi turpis, id dignissim ante pretium sit amet. 
-           Fusce lobortis porttitor ante faucibus ullamcorper.</span>
+        <img src="images/empleados.jpg" width="100%" height="400">
+        <br><br>
+       <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis porttitor nisi, sit amet venenatis tellus.
+            Integer ac diam quis nibh scelerisque volutpat. Maecenas eget nisi efficitur, bibendum arcu pharetra, 
+            gravida diam. Fusce euismod consequat tempus. Ut mattis sollicitudin dapibus. Aenean non vulputate mi. 
+            Morbi est leo, rutrum non leo in, venenatis commodo nibh. Suspendisse aliquam augue ac pulvinar consequat.
+            Curabitur sollicitudin, arcu ac pulvinar faucibus, turpis velit malesuada orci, ut pretium sem eros porttitor 
+            ligula. Phasellus suscipit diam a sagittis molestie. Vestibulum sit amet arcu est. Donec tincidunt ullamcorper
+             nunc eu venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis nisl nec diam
+              dignissim, non congue mi placerat. Nulla facilisi. Nulla lacinia, nibh ac euismod ullamcorper, 
+              nisi tellus egestas ante, non fringilla tortor lectus a quam. Vestibulum mattis sem ut sapien tincidunt, 
+              ac vulputate ipsum dignissim. Nulla vehicula gravida quam sed dictum. Aenean vestibulum fringilla dictum. 
+              Vivamus gravida odio vel nisl pulvinar rhoncus. Ut libero tortor, pharetra eget bibendum congue, sodales at 
+              tortor. Nam sed lectus a purus congue viverra pellentesque sed dui. In accumsan pellentesque ligula, 
+              eu vestibulum nibh mollis bibendum. Orci varius natoque penatibus et magnis dis parturient montes, 
+              nascetur ridiculus mus.</span>
     </div>
 
     <footer>
      <div class="row">
-        <div class="col-sm-4 d-flex flex-column">
+        <div class="col-4 d-flex flex-column">
         <a href="http://www.facebook.com">Facebook</a>
         <a href="http://www.twitter.com">Twitter</a>
         <a href="http://www.instagram.com">Instagram</a>
         <a href="http://www.google.com">Google+</a>
         </div>
-        <div class="col-sm-4">
+        <div class="col-4">
          <address>
              <h3>Oficina central</h3>
-             <p><span class="oi oi-home footer-address-icon"></span>Tucuman 834, Mendoza, Argentina</p>
-             <p><span class="oi oi-phone footer-address-icon"></span>+5426164456789</p>
+             <p><span class="oi oi-home footer-address-icon"></span>Calle Falsa 123</p>
+             <p><span class="oi oi-phone footer-address-icon"></span>+123456789</p>
              <p><span class="oi oi-inbox footer-address-icon"></span>contacto@guiahoteles.com</p>
          </address>
         </div>
-        <div class="col-sm-4 d-flex flex-column align-items-end">
-        <a href="">Nosotros</a>
-        <a href="">Precios</a>
-        <a href="">Termino y condiciones</a>
-        <a href="">Contanto</a>
+        <div class="col-4 d-flex flex-column align-items-end">
+            <a href="./about.html">Nosotros</a>
+            <a href="./precios.html">Precios</a>
+            <a href="./terms.html">Termino y condiciones</a>
+            <a href="./contacto.html">Contacto</a>
         </div>
      </div>
     </footer>

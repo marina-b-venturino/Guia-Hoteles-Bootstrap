@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="icon" href="images/beachhotel.png">
 
     <title>Guia Hoteles</title>
 
   </head>
-  <body>
+  <body class="container-full">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-         <a class="navbar-brand" href="#">Hoteles</a>
+        <a class="navbar-brand" style="color: #05aab0;" href="#"><img src="images/iconmonstr-airport-15-64.png" width="45"> Beach Hoteles</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
          </button>
@@ -24,14 +25,19 @@
                  <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
                  <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
                  <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
-                 <li class="nav-item"><a class="nav-link" href="#">Terminos y condiciones</a></li>
+                 <li class="nav-item"><a class="nav-link" href="./terms.html">Terminos y condiciones</a></li>
                  <li class="nav-item active"><a class="nav-link" href="./contacto.html">Contacto</a></li>
              </ul>
          </div>
       </nav>
-    <div class="jumbotron">
-        <h1>Hoteles</h1>
+      <div class="row jumbotron">
+        <div class="col-md-3">
+        <img src="images/beachhotel.png" width="230">
+        </div>
+        <div class="col-md-8 mt-5">
+        <h1 style="color:#545454">Encontra tu hotel ideal para tus proximas vacasiones</h1> 
     </div>
+      </div>
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -101,16 +107,16 @@
         <div class="col-sm-4">
          <address>
              <h3>Oficina central</h3>
-             <p><span class="oi oi-home footer-address-icon"></span>Tucuman 834, Mendoza, Argentina</p>
-             <p><span class="oi oi-phone footer-address-icon"></span>+5426164456789</p>
+             <p><span class="oi oi-home footer-address-icon"></span>Calle Falsa 123</p>
+             <p><span class="oi oi-phone footer-address-icon"></span>+123456789</p>
              <p><span class="oi oi-inbox footer-address-icon"></span>contacto@guiahoteles.com</p>
          </address>
         </div>
         <div class="col-sm-4 d-flex flex-column align-items-end">
-        <a href="">Nosotros</a>
-        <a href="">Precios</a>
-        <a href="">Termino y condiciones</a>
-        <a href="">Contanto</a>
+          <a href="./about.html">Nosotros</a>
+          <a href="./precios.html">Precios</a>
+          <a href="./terms.html">Termino y condiciones</a>
+          <a href="./contacto.html">Contacto</a>
         </div>
      </div>
     </footer>

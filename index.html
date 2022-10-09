@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="icon" href="images/beachhotel.png">
 
     <title>Guia Hoteles</title>
 
   </head>
-  <body>
+  <body class="container-full">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-         <a class="navbar-brand" href="#">Hoteles</a>
+         <a class="navbar-brand" style="color: #05aab0;" href="#"><img src="images/iconmonstr-airport-15-64.png" width="45"> Beach Hoteles</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
          </button>
@@ -24,13 +25,18 @@
                  <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
                  <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
                  <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
-                 <li class="nav-item"><a class="nav-link" href="#">Terminos y condiciones</a></li>
+                 <li class="nav-item"><a class="nav-link" href="./terms.html">Terminos y condiciones</a></li>
                  <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
              </ul>
          </div>
       </nav>
-    <div class="jumbotron">
-        <h1>Hoteles</h1>
+    <div class="row jumbotron">
+        <div class="col-md-3">
+        <img src="images/beachhotel.png" width="230">
+        </div>
+        <div class="col-md-8 mt-5">
+        <h1 style="color: #545454">Encontra tu hotel ideal para tus proximas vacasiones</h1>
+    </div>
     </div>
     <div class="container">
         <nav aria-label="breadcrumb">
@@ -61,7 +67,7 @@
             <div class="col-sm-4 collapse multi-collapse" id="reserva">  
                 <p>
                     <h3>¿Donde puedo reservar?</h3>
-                    <p>Eligi la ciudad que mas te interese y luego realiza la reserva con tus datos.</p>
+                    <p>Elegí la ciudad que mas te interese y luego realiza la reserva con tus datos.</p>
                 </p>
             </div>
             <div class="col-sm-4 collapse multi-collapse" id="pago">
@@ -95,10 +101,6 @@
             </a>
           </div>
                    
-          
-
-
-
         <hr>
 
         <div class="d-flex flex-wrap flex-row-reverse">
@@ -251,23 +253,6 @@
                 <button class="btn btn-primary btn-reserva" data-toggle="popover" data-content="Reserva ahora!"><span class="oi oi-plus reservar-icon"></span>Reservar</button>
              </div>
             </div>
-            <div class="card card-hotel d-flex flex-column justify-content-between">
-                <img src="images/hotellasvegas.jpg" class="card-img-top" alt="Responsive image">
-                <div class="card-body">
-                   <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Ultimos 3 lugares. Apurate en reservar!">Hotel Las Vegas</h5>
-                   <h6 class="card-subtitle text-muted">Estados Unidos</h6>
-                   <p class="card-text">Hotel ubicado en pleno centro.</p>
-                   <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
-            </div>
-            <div>
-                <button class="btn btn-primary btn-reserva" data-toggle="popover" data-content="Reserva ahora!"><span class="oi oi-plus reservar-icon"></span>Reservar</button>
-             </div>
-            </div>
-            
-
-
-
-
 
 
         </div>
@@ -293,7 +278,7 @@
                         </form>
                     </div>  
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-success">Enviar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
                     </div>              
                 </div>
             </div>
@@ -304,29 +289,27 @@
 
     </div>
 
-    <footer>
-     <div class="row">
-        <div class="col-sm-4 d-flex flex-column">
+    <footer class="row container-full">
+        <div class="col-4 d-flex flex-column">
         <a href="http://www.facebook.com">Facebook</a>
         <a href="http://www.twitter.com">Twitter</a>
         <a href="http://www.instagram.com">Instagram</a>
         <a href="http://www.google.com">Google+</a>
         </div>
-        <div class="col-sm-4">
+        <div class="col-4">
          <address>
              <h3>Oficina central</h3>
-             <p><span class="oi oi-home footer-address-icon"></span>Tucuman 834, Mendoza, Argentina</p>
-             <p><span class="oi oi-phone footer-address-icon"></span>+5426164456789</p>
+             <p><span class="oi oi-home footer-address-icon"></span>Calle Falsa 123</p>
+             <p><span class="oi oi-phone footer-address-icon"></span>+123456789</p>
              <p><span class="oi oi-inbox footer-address-icon"></span>contacto@guiahoteles.com</p>
          </address>
         </div>
-        <div class="col-sm-4 d-flex flex-column align-items-end">
-        <a href="">Nosotros</a>
-        <a href="">Precios</a>
-        <a href="">Termino y condiciones</a>
-        <a href="">Contanto</a>
+        <div class="col-4 d-flex flex-column align-items-end">
+        <a href="./about.html">Nosotros</a>
+        <a href="./precios.html">Precios</a>
+        <a href="./terms.html">Termino y condiciones</a>
+        <a href="./contacto.html">Contacto</a>
         </div>
-     </div>
     </footer>
     
 

@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="icon" href="images/beachhotel.png">
 
     <title>Guia Hoteles</title>
 
   </head>
-  <body>
+  <body class="container-full">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-         <a class="navbar-brand" href="#">Hoteles</a>
+        <a class="navbar-brand" style="color: #05aab0;" href="#"><img src="images/iconmonstr-airport-15-64.png" width="45"> Beach Hoteles</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
          </button>
@@ -24,14 +25,19 @@
                  <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
                  <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
                  <li class="nav-item active"><a class="nav-link" href="./precios.html">Precios</a></li>
-                 <li class="nav-item"><a class="nav-link" href="#">Terminos y condiciones</a></li>
+                 <li class="nav-item"><a class="nav-link" href="./terms.html">Terminos y condiciones</a></li>
                  <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
              </ul>
          </div>
       </nav>
-     <div class="jumbotron">
-        <h1>Hoteles</h1>
-     </div>
+      <div class="row jumbotron">
+        <div class="col-md-3">
+        <img src="images/beachhotel.png" width="230">
+        </div>
+        <div class="col-md-8 mt-5">
+        <h1 style="color:#545454">Encontra tu hotel ideal para tus proximas vacasiones</h1> 
+    </div>
+      </div>
       <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -49,10 +55,7 @@
                 <a class="nav-link" id="tarjetas-tab" data-toggle="tab"
                 href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" id="comentarios-tab" data-toggle="tab"
-                href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
-            </li>
+            
         </ul>
 
            <div class="tab-content" id="myTabContent">
@@ -61,20 +64,17 @@
                      <table class="table table-striped">
                   <thead class="thead-dark">
                   <th>Calidad</th>
-                  <th>Pinamar</th>
-                  <th>San Clemente</th>
-                  <th>Mar del Plata</th>
-                  <th>Santa Teresita</th>
-                  <th>Santa Clara</th>
-                  <th>Mar de ajo</th>
-                  <th>Miramar</th>
-                  <th>Villa Gesell</th>
-                  <th>Carilo</th>
-                  <th>Las Grutas</th>
-                  <th>El Doradillo</th>
-                  <th>Mar de las Pampas</th>
-                  <th>Necochea</th>
-                  <th>Mar Azul</th>
+                  <th>Hotel Barcelona</th>
+                  <th>Hotel Lima</th>
+                  <th>Hotel Baires</th>
+                  <th>Hotel Madrid</th>
+                  <th>Hotel Rio de Janeiro</th>
+                  <th>Hotel Cancún</th>
+                  <th>Hotel Punta Cana</th>
+                  <th>Hotel Bora Bora</th>
+                  <th>Hotel Uspallata</th>
+                  <th>Hotel Burj Arab</th>
+                  <th>Hotel Los Angeles</th>
               </thead>
               <tbody>
                   <tr>
@@ -90,9 +90,7 @@
                       <td>$400</td>
                       <td>$420</td>
                       <td>$450</td>
-                      <td>$470</td>
-                      <td>$480</td>
-                      <td>$490</td>
+                     
                   </tr>
                   <tr>
                     <td><span class="oi oi-star"></span>
@@ -108,9 +106,7 @@
                     <td>$700</td>
                     <td>$800</td>
                     <td>$820</td>
-                    <td>$850</td>
-                    <td>$880</td>
-                    <td>$900</td>
+                   
                 </tr>
                 <tr>
                     <td><span class="oi oi-star"></span>
@@ -127,9 +123,7 @@
                     <td>$1300</td>
                     <td>$1400</td>
                     <td>$1420</td>
-                    <td>$1450</td>
-                    <td>$1480</td>
-                    <td>$1500</td>
+                    
                 </tr>
                 <tr>
                     <td><span class="oi oi-star"></span>
@@ -147,9 +141,6 @@
                     <td>$3300</td>
                     <td>$3200</td>
                     <td>$3220</td>
-                    <td>$3250</td>
-                    <td>$3280</td>
-                    <td>$3300</td>
                 </tr>
                 <tr>
                     <td><span class="oi oi-star"></span>
@@ -168,9 +159,7 @@
                     <td>$5300</td>
                     <td>$5320</td>
                     <td>$5350</td>
-                    <td>$5380</td>
-                    <td>$5400</td>
-                    <td>$5420</td>
+
                 </tr>
               </tbody>
           </table>
@@ -223,12 +212,9 @@
                 </div>
             </div>
 
-
-
-
                <div class="d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
-                   <div class="card-header" style="background-color: teal; color: white;">
+                  <div class="card" style="width: 18rem; margin-top: 30px;">
+                   <div class="card-header" style="background-color: #05aab0; color: white;">
                     Tarjetas aceptadas
                 </div>
                 <ul class="list-group list-group-flush">
@@ -246,25 +232,25 @@
 
     <footer>
      <div class="row">
-        <div class="col-sm-4 d-flex flex-column">
+        <div class="col-4 d-flex flex-column">
         <a href="http://www.facebook.com">Facebook</a>
         <a href="http://www.twitter.com">Twitter</a>
         <a href="http://www.instagram.com">Instagram</a>
         <a href="http://www.google.com">Google+</a>
         </div>
-        <div class="col-sm-4">
+        <div class="col-4">
          <address>
              <h3>Oficina central</h3>
-             <p><span class="oi oi-home footer-address-icon"></span>Tucuman 834, Mendoza, Argentina</p>
-             <p><span class="oi oi-phone footer-address-icon"></span>+5426164456789</p>
+             <p><span class="oi oi-home footer-address-icon"></span>Calle Falsa 123</p>
+             <p><span class="oi oi-phone footer-address-icon"></span>+123456789</p>
              <p><span class="oi oi-inbox footer-address-icon"></span>contacto@guiahoteles.com</p>
          </address>
         </div>
-        <div class="col-sm-4 d-flex flex-column align-items-end">
-        <a href="">Nosotros</a>
-        <a href="">Precios</a>
-        <a href="">Termino y condiciones</a>
-        <a href="">Contanto</a>
+        <div class="col-4 d-flex flex-column align-items-end">
+            <a href="./about.html">Nosotros</a>
+            <a href="./precios.html">Precios</a>
+            <a href="./terms.html">Termino y condiciones</a>
+            <a href="./contacto.html">Contacto</a>
         </div>
      </div>
     </footer>
