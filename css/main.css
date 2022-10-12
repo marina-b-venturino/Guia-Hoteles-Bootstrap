@@ -59,3 +59,23 @@ footer {
 .flex-column a {
     color: #545454; 
 }
+
+.dev p {
+    margin-left: 560px;
+    margin-top: 5px;
+}
+
+.dev a {
+    color:#fff;
+}
+
+.line {
+    width: 100%;
+    background-color: #000;
+    margin-left: 200px;
+}
+@media screen and (max-width: 375px) {
+  .jumbotron {
+    justify-content: center;
+  }
+}
